@@ -1,0 +1,42 @@
+.bluetooth > p {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+h5 {
+  color: rgb(235, 220, 13);
+  text-align: center;
+  font-family: Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-size: 1.5vw;
+  font-weight: 300;
+  line-height: 2vw;
+  text-transform: uppercase;
+}
+h6 {
+  color: rgb(213, 228, 228);
+  text-align: center;
+  font-family: Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-size: 1.5vw;
+  font-weight: 300;
+  line-height: 2vw;
+  text-transform: uppercase;
+}
+p {
+  color: whitesmoke;
+  text-align: center;
+  font-family: Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-size: 1.5vw;
+  font-weight: 300;
+  line-height: 2vw;
+  text-transform: uppercase;
+}
+button {
+  color: black;
+  text-align: center;
+  font-family: Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-size: 1vw;
+  font-weight: bold;
+  line-height: 2vw;
+  text-transform: uppercase;
+  background: #d5994b;
+}

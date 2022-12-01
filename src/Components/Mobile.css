@@ -1,0 +1,204 @@
+:root {
+  --color-1: #442288;
+  --color-2: #6ca2ea;
+  --color-3: #b5d33d;
+  --color-4: #fed23f;
+  --color-5: #eb7d5b;
+  --angle: 0deg;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #000;
+}
+h1 {
+  color: rgb(247, 11, 11);
+  text-align: center;
+  font-family: Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-size: 3.5vw;
+  font-weight: 500vh;
+  text-transform: uppercase;
+  word-spacing: 1vw;
+  background: linear-gradient(
+    transparent 20%,
+    var(--color-2) 20%,
+    var(--color-2) 39%,
+    transparent 39%,
+    transparent 40%,
+    var(--color-3) 40%,
+    var(--color-3) 59%,
+    transparent 59%,
+    transparent 60%,
+    var(--color-4) 60%,
+    var(--color-4) 79%,
+    transparent 79%,
+    transparent 80%,
+    var(--color-5) 80%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: 10s rotate linear infinite;
+}
+
+h5 {
+  color: rgb(235, 220, 13);
+  text-align: center;
+  font-family: Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-size: 1.5vw;
+  font-weight: 300;
+  line-height: 2vw;
+  text-transform: uppercase;
+}
+.mobile > p:nth-child(3) {
+  color: whitesmoke;
+  text-align: center;
+  font-family: Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-size: 1.5vw;
+  font-weight: 300;
+  line-height: 2vw;
+  text-transform: uppercase;
+}
+.mobile :nth-child(5) {
+  color: black;
+  text-align: center;
+  font-family: Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-size: 1vw;
+  font-weight: bold;
+  line-height: 2vw;
+  text-transform: uppercase;
+  background: #d5994b;
+}
+
+.mobilescontainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  gap: 20px;
+
+  /* width: 300px;
+  height: 300px; */
+}
+.textimg {
+  position: absolute;
+  top: 20px;
+  color: white;
+  top: 40%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  font-size: 3rem;
+  line-height: 1.5;
+
+  font-family: CamphorPro-Bold, sans-serif;
+  font-weight: 700;
+}
+.textimg1 {
+  position: absolute;
+  top: 20px;
+  color: whitesmoke;
+  top: 50%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  font-size: 2rem;
+  line-height: 1.5;
+
+  font-family: CamphorPro-Bold, sans-serif;
+  font-weight: 700;
+}
+
+.Twoimages {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 100%;
+  top: 0px;
+  padding: 0px;
+}
+.textonimg {
+  width: 100%;
+  position: relative;
+}
+.textonimg > div {
+  width: 50%;
+}
+.mobilelanches {
+  text-decoration: none;
+}
+.mobilescontainer > div {
+  width: 100%;
+}
+.textimg2 {
+  position: absolute;
+  top: 20px;
+  color: grey;
+  top: 50%;
+  right: 8%;
+  transform: translate(50%, 50%);
+  font-size: 1.5rem;
+  line-height: 1.5;
+
+  font-family: CamphorPro-Bold, sans-serif;
+  font-weight: 700;
+}
+.mobile {
+  /* border: 2px solid yellow; */
+  box-sizing: border-box;
+  padding: 10px 10px;
+}
+.mobile > :nth-child(3) {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.displayauto {
+  max-width: 100% !important;
+}
+@media screen and (max-width: 400px) {
+  .mobilescontainer {
+    background-color: light green;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1382px) {
+  .textimg {
+    font-size: 2rem;
+  }
+  .textimg1 {
+    font-size: 1rem;
+  }
+  .Twoimages {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+.Twoimages > div {
+  object-fit: contain;
+}
+.displayauto {
+  height: 500px;
+  border: 2px solid red;
+}
+@media screen and (min-width: 450px) and (max-width: 767px) {
+  .textimg {
+    font-size: 1rem;
+  }
+  .textimg1 {
+    font-size: 0.5rem;
+  }
+  .Twoimages {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media screen and (min-width: 0px) and (max-width: 449px) {
+  .textimg {
+    font-size: 0.5rem;
+  }
+  .textimg1 {
+    font-size: 0.5rem;
+  }
+  .Twoimages {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
